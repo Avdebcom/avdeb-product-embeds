@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "avdeb/products",
+	"version": "0.1.0",
+	"title": "AVDEB Products",
+	"category": "embed",
+	"icon": "cart",
+	"description": "Show AVDEB products from a creator, a category, a search or a single product, with your referral code on every link.",
+	"keywords": [ "avdeb", "affiliate", "creator", "products", "shop" ],
+	"textdomain": "avdeb-product-embeds",
+	"attributes": {
+		"source": { "type": "string", "enum": [ "creator", "tag", "handle", "q" ], "default": "creator" },
+		"creator": { "type": "string", "default": "" },
+		"tag": { "type": "string", "default": "" },
+		"handle": { "type": "string", "default": "" },
+		"q": { "type": "string", "default": "" },
+		"limit": { "type": "number", "default": 6 },
+		"columns": { "type": "number", "default": 0 }
+	},
+	"supports": {
+		"html": false,
+		"align": [ "wide", "full" ]
+	},
+	"editorScript": "file:./index.js",
+	"style": "avdeb-product-embeds",
+	"render": "file:./render.php"
+}
