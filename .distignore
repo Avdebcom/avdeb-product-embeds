@@ -4,8 +4,11 @@
 /node_modules
 /vendor
 .distignore
+.gitattributes
 .gitignore
+*.zip
 README.md
+PUBLISHING.md
 composer.json
 composer.lock
 phpcs.xml.dist

@@ -45,6 +45,22 @@ One product card (avdeb.com/store/product-handle/).
 `[avdeb_link url="/store/product-handle/"]Get yours[/avdeb_link]`
 A text link to any avdeb.com page, with your referral code added.
 
+= Earn commission: join the AVDEB affiliate program =
+
+The plugin works without an account. To earn from the products you show, join the free [AVDEB affiliate program](https://avdeb.com/affiliate/): 5% commission on referred sales, a 30-day cookie, monthly PayPal payouts in USD (minimum $50), open worldwide.
+
+1. Open the application form at [avdeb.com/affiliate/apply/](https://avdeb.com/affiliate/apply/).
+2. Create your account with an email address and password (already have one? Sign in instead).
+3. Choose the program: **Affiliate** (share AVDEB products and earn commission), **Creator** (submit your sticker or 3D designs; AVDEB prints and ships them and you earn on every sale), or both.
+4. Fill in your name, country, tax residency, legal name (business name is optional) and address.
+5. Enter the PayPal email where commissions should be sent, and optionally your website and social media links.
+6. Accept the Terms & Conditions and Privacy Policy and click **Create Account & Apply**.
+7. Wait for approval — usually within 24 hours, at most 1–3 days. You'll get your referral link by email and in your affiliate dashboard.
+8. In your [partner dashboard](https://avdeb.com/affiliate/dashboard/developers/) open **Embeds & API** and create a secret key (it starts with `avdeb_sk_`), or copy your referral code from **Links**.
+9. In WordPress go to **Settings → AVDEB** and paste the secret key (or the referral code). Every product link the plugin shows now carries your code.
+
+Please disclose your affiliate links to your readers — the plugin can show a disclosure note under every embed for you.
+
 == External services ==
 
 This plugin connects to AVDEB (https://avdeb.com), the store whose products it displays.
@@ -57,8 +73,8 @@ AVDEB [Terms of Service](https://avdeb.com/terms/) and [Privacy Policy](https://
 
 == Installation ==
 
-1. Install and activate the plugin.
-2. Go to Settings → AVDEB and (optionally) paste your secret API key from the AVDEB partner dashboard (Embeds & API), or just your referral code.
+1. In wp-admin go to **Plugins → Add New Plugin**, search for "AVDEB Product Embeds", click **Install Now**, then **Activate**. (Or upload the plugin zip under **Plugins → Add New Plugin → Upload Plugin**.)
+2. Optional: go to **Settings → AVDEB** and paste your secret API key from the AVDEB partner dashboard (Embeds & API), or just your referral code. Not a partner yet? [Apply here](https://avdeb.com/affiliate/apply/) — see "Earn commission" above.
 3. Add the "AVDEB Products" block to a post or page, or paste a shortcode.
 
 == Frequently Asked Questions ==
@@ -71,9 +87,21 @@ No. Anyone can embed products. You only need an account to earn commission (affi
 
 Both work. An API key (partner dashboard → Embeds & API, "secret key") adds your referral code automatically, shows who you're connected as, and allows up to 48 products per block. Without a key, up to 12 products are shown and the referral code you enter is used. Never share your secret key or put it in page content.
 
+= How do I become an AVDEB affiliate? =
+
+Apply for free at [avdeb.com/affiliate/apply/](https://avdeb.com/affiliate/apply/): create an account, choose "Affiliate", fill in your details and PayPal email, and submit. Approval usually takes under 24 hours. The step-by-step guide is in the Description above; program details are at [avdeb.com/affiliate/](https://avdeb.com/affiliate/).
+
+= How much do affiliates earn? =
+
+5% of every completed sale you refer, with a 30-day cookie and no cap. Commissions are paid monthly via PayPal in USD once your balance reaches $50; smaller balances roll over to the next month. AVDEB's affiliate terms apply.
+
+= I design stickers or 3D prints. Can I sell them on AVDEB? =
+
+Yes. Choose "Creator" on the [application form](https://avdeb.com/affiliate/apply/). Once your designs are listed, show them on your site with the block's "A creator's products" option.
+
 = Where do I find my referral code? =
 
-In your AVDEB affiliate dashboard under Links. Not a partner yet? See https://avdeb.com/affiliate/
+In your AVDEB affiliate dashboard under Links (it's also in your approval email). Not a partner yet? See [avdeb.com/affiliate/](https://avdeb.com/affiliate/).
 
 = How do I show only my own designs as a creator? =
 
@@ -97,3 +125,8 @@ Yes. The output is plain HTML with no per-visitor content.
 
 = 0.1.0 =
 * First release: block, shortcodes (creator, category, search, product, link), API key or referral code, disclosure, per-query caching with fallback.
+
+== Upgrade Notice ==
+
+= 0.1.0 =
+First release.

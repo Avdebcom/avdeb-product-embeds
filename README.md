@@ -11,6 +11,29 @@ Show [AVDEB](https://avdeb.com/) products — a creator's shop, a category or si
   `Authorization: Bearer avdeb_sk_…`), cached per query (transient + 7-day last-good fallback)
 - No front-end JavaScript, no cookies, no visitor data
 
+## Become an AVDEB affiliate (or creator)
+
+The plugin works without an account; you need one to earn commission. Program details:
+[avdeb.com/affiliate](https://avdeb.com/affiliate/) — 5% commission, 30-day cookie, monthly PayPal payouts in USD
+($50 minimum), open worldwide, approval usually within 24 hours.
+
+1. Open [avdeb.com/affiliate/apply](https://avdeb.com/affiliate/apply/).
+2. **Account** — email + password (or *Sign in* if you already have an AVDEB account).
+3. **Program** — *Affiliate* (share products, earn commission), *Creator* (submit sticker / 3D designs that
+   AVDEB prints and ships; you earn on every sale), or both.
+4. **Personal information & details** — first/last name, country, tax residency, legal name (business name optional).
+5. **Address** — street, city, state/province, postal code.
+6. **Payout & promotion** — PayPal email for commissions; optionally your website and social links.
+7. Accept the Terms & Conditions and Privacy Policy → **Create Account & Apply**.
+8. After approval you get your referral link by email and in the dashboard.
+9. Partner dashboard → **Embeds & API** ([direct link](https://avdeb.com/affiliate/dashboard/developers/)) →
+   create a **secret key** (`avdeb_sk_…`), or copy your referral code from **Links**.
+10. WordPress → **Settings → AVDEB** → paste the key (or code) → **Save**. All product links now carry your code.
+
+## Publishing to WordPress.org
+
+See [PUBLISHING.md](PUBLISHING.md) for the submission, review and SVN release steps.
+
 ## Development
 
 Requires PHP 7.4+ and WordPress 6.3+.
@@ -35,6 +58,7 @@ includes/class-avdeb-pe-shortcodes.php
 includes/class-avdeb-pe-settings.php  Settings → AVDEB
 blocks/products/                  block.json, editor script, render.php
 readme.txt                        WordPress.org listing
+.wordpress-org/                   WordPress.org banner, icon and screenshots (SVN /assets, not shipped)
 ```
 
 ## License
