@@ -117,9 +117,9 @@ Yes. The output is plain HTML with no per-visitor content.
 
 == Screenshots ==
 
-1. The AVDEB Products block in the editor.
-2. A creator's products on a blog post.
-3. Settings → AVDEB.
+1. The AVDEB Products block in the editor: pick a creator, category, product or search and see a live preview.
+2. Products from a category in a blog post, with the affiliate disclosure underneath (Twenty Twenty-Five theme).
+3. Settings → AVDEB: API key or referral code, default columns, disclosure text and cache time.
 
 == Changelog ==
 

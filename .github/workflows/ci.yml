@@ -21,7 +21,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Build release copy
+        run: |
+          mkdir -p build/avdeb-product-embeds
+          git archive HEAD | tar -x -C build/avdeb-product-embeds
       # The same checks WordPress.org reviewers run (coding standards, security, readme).
       - uses: wordpress/plugin-check-action@v1
         with:
-          exclude-directories: '.github'
+          build-dir: build/avdeb-product-embeds
+          slug: avdeb-product-embeds

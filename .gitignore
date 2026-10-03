@@ -1,4 +1,6 @@
 vendor/
 node_modules/
 *.zip
+# WordPress.org SVN checkout (svn co https://plugins.svn.wordpress.org/avdeb-product-embeds)
+/avdeb-product-embeds/
 .DS_Store

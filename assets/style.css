@@ -34,6 +34,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 0.35em;
+	box-sizing: border-box;
 	height: 100%;
 	padding: 0.75rem;
 	border: 1px solid rgba(0, 0, 0, 0.1);
