@@ -30,10 +30,6 @@ The plugin works without an account; you need one to earn commission. Program de
    create a **secret key** (`avdeb_sk_…`), or copy your referral code from **Links**.
 10. WordPress → **Settings → AVDEB** → paste the key (or code) → **Save**. All product links now carry your code.
 
-## Publishing to WordPress.org
-
-See [PUBLISHING.md](PUBLISHING.md) for the submission, review and SVN release steps.
-
 ## Development
 
 Requires PHP 7.4+ and WordPress 6.3+.
